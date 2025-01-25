@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* background-color: #9594ff3f; */
+    /* background-image: url(https://r4.wallpaperflare.com/wallpaper/979/801/86/minimalism-hexagon-wallpaper-b26142f05d662e5b9a88a215f008b912.jpg); */
+    font-family: "Poppins", sans-serif;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 660px;
+    margin: 40px auto;
+}
+
+.profileInner {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.profile-image {
+    width: 190px;
+    height: 160px;
+    float: right;
+    border-radius: 100px;
+    background-color: #23155725;
+    padding: 6px;
+    transition: box-shadow 0.6s ease;
+}
+
+.profile-image:hover{
+    box-shadow: 0 4px 16px #23155793;
+    
+}
+
+
+.skillsDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.profile {
+    text-align: left;
+}
+
+.profile h2 {
+    margin-bottom: 4px;
+
+}
+
+/* .education,
+.experience,
+.skills {
+    margin-top: 10px;
+} */
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #07056dc5;
+
+
+}
+
+@media (max-width: 660px) {
+    .container {
+        margin: 50px 20px;
+        width: auto;
+    }
+
+    .profile {
+        text-align: left;
+    }
+    .profile-image{
+        display: none;
+    }
+
+    .company{
+        margin-right: 12px;
+    }
+    .time-period{
+        font-size: small;
+        text-align: end;
+    }
+
+    .domain{
+        font-size: small;
+    }
+
+    a:hover{
+        color: #BF360C;
+    }
+    .skillsDiv{
+        flex-direction: column;
+    }
+    .inner_experince{
+        flex-direction: column;
+    }
+}
+
+i{
+    margin-right: 6px;
+}
+
+.social_icon{
+    color:blue;
+}
+
+
+
+.para {
+    font-size: small;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #231557;
+    margin-left: 12px;
+}
+
+.time-period{
+    font-size: small;
+    color: black;
+    margin-left: 24px;
+}
+
+.company{
+    font-size: small;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #231557;
+    margin-left: 12px;
+}
+
+h5 {
+    font-weight: 600;
+    color: #BF360C;
+    margin-top: 12px;
+}
+
+.inner_experince{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+
+h4 {
+    font-size: medium;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #BF360C;
+}
+
+.footer-text{
+    font-weight: 600;
+    color: blue;
+}
+.footer{
+    text-align: center;
+    font-size: small;
+    color: black;
+    margin-top: 12px;
+    border-radius: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background-color: #dfeaffa6;
+}
+
+.print{
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    width: max-content;
+    align-content: center;
+    font-size: small;
+    background: transparent;
+    margin-bottom: 16px;
+}
+
+.print:hover{
+    color: #fff800;
+    border: 1px solid red;
+    box-shadow: 0 2px 8px red;
+}
+
+.printBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
